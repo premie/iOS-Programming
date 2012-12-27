@@ -18,6 +18,8 @@
 		49DA3208168C386D001E0E79 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49DA3207168C386D001E0E79 /* Default-568h@2x.png */; };
 		49DA320B168C386D001E0E79 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DA320A168C386D001E0E79 /* QuizViewController.m */; };
 		49DA320E168C386D001E0E79 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49DA320C168C386D001E0E79 /* QuizViewController.xib */; };
+		49DA3219168C4206001E0E79 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 49DA3218168C4205001E0E79 /* Icon.png */; };
+		49DA321C168C420A001E0E79 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49DA321B168C420A001E0E79 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		49DA3209168C386D001E0E79 /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		49DA320A168C386D001E0E79 /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 		49DA320D168C386D001E0E79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QuizViewController.xib; sourceTree = "<group>"; };
+		49DA3218168C4205001E0E79 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		49DA321B168C420A001E0E79 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		49DA31E2168C386C001E0E79 = {
 			isa = PBXGroup;
 			children = (
+				49DA321B168C420A001E0E79 /* Icon@2x.png */,
+				49DA3218168C4205001E0E79 /* Icon.png */,
 				49DA31F7168C386D001E0E79 /* Quiz */,
 				49DA31F0168C386D001E0E79 /* Frameworks */,
 				49DA31EE168C386D001E0E79 /* Products */,
@@ -164,6 +170,8 @@
 				49DA3206168C386D001E0E79 /* Default@2x.png in Resources */,
 				49DA3208168C386D001E0E79 /* Default-568h@2x.png in Resources */,
 				49DA320E168C386D001E0E79 /* QuizViewController.xib in Resources */,
+				49DA3219168C4206001E0E79 /* Icon.png in Resources */,
+				49DA321C168C420A001E0E79 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +301,7 @@
 				49DA3213168C386D001E0E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
