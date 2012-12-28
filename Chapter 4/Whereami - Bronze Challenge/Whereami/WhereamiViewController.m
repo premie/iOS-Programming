@@ -26,6 +26,9 @@
         // regardless of how much time/power it takes
         [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
         
+        // Set location manager to notify us every 50 meters
+        [locationManager setDistanceFilter:50];
+        
         // Tell our manager to start looking for its location imediately
         [locationManager startUpdatingLocation];
     }
