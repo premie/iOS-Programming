@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BNRItem.h"
+#import "BNRContainer.h"
 
 int main(int argc, const char * argv[])
 {
@@ -23,6 +24,21 @@ int main(int argc, const char * argv[])
         for(BNRItem* item in items){
             NSLog(@"%@",item);
         }
+        
+        BNRContainer* aContainer = [[BNRContainer alloc] initWithItemName:@"First Container"
+                                                           valueInDollars:50
+                                                             serialNumber:@"731236"];
+        BNRContainer* bContainer = [[BNRContainer alloc] initWithItemName:@"Second Container"
+                                                           valueInDollars:60
+                                                             serialNumber:@"768236"];
+        
+        for(BNRItem* item in items){
+            [aContainer addItem:item];
+        }
+        
+        [aContainer addItem:bContainer];
+        
+        NSLog(@"\n%@\n",[aContainer description]);
         
         items = nil;
     }
