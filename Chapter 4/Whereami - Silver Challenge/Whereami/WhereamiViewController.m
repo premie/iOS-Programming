@@ -31,6 +31,9 @@
         
         // Tell our manager to start looking for its location imediately
         [locationManager startUpdatingLocation];
+        
+        // Tell our manager to start looking for its heading
+        [locationManager startUpdatingHeading];
     }
     
     return self;
@@ -41,10 +44,15 @@
     [locationManager setDelegate:nil];
 }
 
+-(void)locationManager:(CLLocationManager *)manager
+      didUpdateHeading:(CLHeading *)newHeading{
+    NSLog(@"New Heading: %@",newHeading);
+}
+
 -(void)locationManager:(CLLocationManager*)manager
    didUpdateToLocation:(CLLocation *)newLocation
           fromLocation:(CLLocation *)oldLocation{
-    NSLog(@"%@", newLocation);
+    NSLog(@"New Location: %@", newLocation);
 }
 
 -(void)locationManager:(CLLocationManager*)manager
