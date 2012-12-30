@@ -63,6 +63,18 @@
     [locationManager stopUpdatingLocation];
 }
 
+-(IBAction)changeMapType:(id)sender{
+    if([sender selectedSegmentIndex] == 0){
+        [worldView setMapType:MKMapTypeHybrid];
+    }
+    else if([sender selectedSegmentIndex] == 1){
+        [worldView setMapType:MKMapTypeSatellite];
+    }
+    else{
+        [worldView setMapType:MKMapTypeStandard];
+    }
+}
+
 /////////////////////////////////////////
 // CLLocationManagerDelegate Protocols //
 /////////////////////////////////////////
