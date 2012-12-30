@@ -20,5 +20,6 @@
 
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;  // Required by MKAnnotation
 @property (nonatomic, copy) NSString* title;                        // Optional
+@property (nonatomic, copy) NSString* subtitle;                     // Optional
 
 @end

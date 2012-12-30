@@ -96,9 +96,9 @@
 			children = (
 				4987B18C168E40F000A8359B /* WhereamiAppDelegate.h */,
 				4987B18D168E40F000A8359B /* WhereamiAppDelegate.m */,
-				4987B195168E40F000A8359B /* WhereamiViewController.h */,
 				4987B1B2168FE6EE00A8359B /* BNRMapPoint.h */,
 				4987B1B3168FE6EE00A8359B /* BNRMapPoint.m */,
+				4987B195168E40F000A8359B /* WhereamiViewController.h */,
 				4987B196168E40F000A8359B /* WhereamiViewController.m */,
 				4987B198168E40F000A8359B /* WhereamiViewController.xib */,
 				4987B184168E40F000A8359B /* Supporting Files */,
