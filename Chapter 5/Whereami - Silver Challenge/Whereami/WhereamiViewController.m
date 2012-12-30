@@ -80,9 +80,10 @@
 /////////////////////////////////////////
 
 -(void)locationManager:(CLLocationManager*)manager
-   didUpdateToLocation:(CLLocation *)newLocation
-          fromLocation:(CLLocation *)oldLocation{
-    NSLog(@"%@", newLocation);
+    didUpdateLocations:(NSArray*)newLocations{
+    
+    // Grab the most recent (last) location from the array
+    CLLocation* newLocation = [newLocations objectAtIndex:[newLocations count]-1];
     
     // How many seconds ago was this new location created?
     NSTimeInterval t = [[newLocation timestamp] timeIntervalSinceNow];
@@ -93,6 +94,9 @@
         // Cached data, ignore
         return;
     }
+    
+    NSLog(@"%@", newLocation);
+
     
     [self foundLocation:newLocation];
 }
