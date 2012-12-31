@@ -42,7 +42,11 @@
     for(float currentRadius = maxRadius; currentRadius > 0; currentRadius -= 20){
         // Add a shape to the context
         CGContextAddArc(ctx, center.x, center.y, currentRadius, 0.0, M_PI*2.0, YES);
-    
+        
+        // Change the alpha of our circle.
+        CGFloat alpha = currentRadius/maxRadius;
+        [[[self circleColor] colorWithAlphaComponent:alpha] setStroke];
+        
         // Perform a drawing instruction
         CGContextStrokePath(ctx);
     }
