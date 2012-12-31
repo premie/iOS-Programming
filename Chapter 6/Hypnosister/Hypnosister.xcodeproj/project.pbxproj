@@ -16,6 +16,7 @@
 		4987B1F01691713A00A8359B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4987B1EF1691713A00A8359B /* Default.png */; };
 		4987B1F21691713A00A8359B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4987B1F11691713A00A8359B /* Default@2x.png */; };
 		4987B1F41691713A00A8359B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4987B1F31691713A00A8359B /* Default-568h@2x.png */; };
+		4987B1FC169179A600A8359B /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4987B1FB169179A600A8359B /* HypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		4987B1EF1691713A00A8359B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4987B1F11691713A00A8359B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4987B1F31691713A00A8359B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4987B1FA169179A600A8359B /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		4987B1FB169179A600A8359B /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				4987B1EC1691713A00A8359B /* HypnosisterAppDelegate.h */,
 				4987B1ED1691713A00A8359B /* HypnosisterAppDelegate.m */,
+				4987B1FA169179A600A8359B /* HypnosisView.h */,
+				4987B1FB169179A600A8359B /* HypnosisView.m */,
 				4987B1E41691713A00A8359B /* Supporting Files */,
 			);
 			path = Hypnosister;
@@ -167,6 +172,7 @@
 			files = (
 				4987B1EA1691713A00A8359B /* main.m in Sources */,
 				4987B1EE1691713A00A8359B /* HypnosisterAppDelegate.m in Sources */,
+				4987B1FC169179A600A8359B /* HypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
