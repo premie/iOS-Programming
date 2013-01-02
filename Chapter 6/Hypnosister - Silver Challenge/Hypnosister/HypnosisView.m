@@ -68,10 +68,24 @@
     // Shadow will move 4 points to right, 3 points down
     CGSize offset = CGSizeMake(4, 3);
     CGColorRef color = [[UIColor darkGrayColor] CGColor];
+    CGContextSaveGState(ctx);
     CGContextSetShadowWithColor(ctx, offset, 2.0, color);
     
     // Draw string
     [text drawInRect:textRect withFont:font];
+    
+    // Move to the bottom of our vertical line of the crosshair
+    CGContextMoveToPoint(ctx, center.x, center.y-10);
+    CGContextAddLineToPoint(ctx, center.x, center.y+10);
+    
+    // Move to the left of our horizontal line of the croasshair
+    CGContextMoveToPoint(ctx, center.x-10, center.y);
+    CGContextAddLineToPoint(ctx, center.x+10, center.y);
+    
+    // Change color to green and perform drawing instruction
+    CGContextRestoreGState(ctx);
+    [[UIColor greenColor] setStroke];
+    CGContextStrokePath(ctx);
 }
 
 -(void)setCircleColor:(UIColor *)newCircleColor{
