@@ -7,7 +7,6 @@
 //
 
 #import "HypnosisViewController.h"
-#import "HypnosisView.h"
 
 @implementation HypnosisViewController
 
@@ -29,10 +28,14 @@
 -(void)loadView{
     // Create a view
     CGRect frame = [[UIScreen mainScreen] bounds];
-    HypnosisView* v = [[HypnosisView alloc] initWithFrame:frame];
+    v = [[HypnosisView alloc] initWithFrame:frame];
+    UISegmentedControl* segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Red",@"Green",@"Blue",nil]];
+    segmentedControl.center = CGPointMake(v.bounds.size.width/2.0,v.bounds.size.height*0.75);
     
     // Set it as *the* view of this view controller
     [self setView:v];
+    [v addSubview:segmentedControl];
+    [segmentedControl addTarget:self action:@selector(changeRingColor:) forControlEvents:UIControlEventValueChanged];
 }
 
 -(void)viewDidLoad{
@@ -40,6 +43,19 @@
     [super viewDidLoad];
     
     NSLog(@"HypnosisViewController loaded its view.");
+}
+
+-(IBAction)changeRingColor:(id)sender{
+    NSLog(@"Segment %d enabled.",[sender selectedSegmentIndex]);
+    if([sender selectedSegmentIndex] == 0){
+        [v setCircleColor:[UIColor redColor]];
+    }
+    else if([sender selectedSegmentIndex] == 1){
+        [v setCircleColor:[UIColor greenColor]];
+    }
+    else{
+        [v setCircleColor:[UIColor blueColor]];
+    }
 }
 
 @end

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HypnosisView.h"
 
-@interface HypnosisViewController : UIViewController
+@interface HypnosisViewController : UIViewController{
+    HypnosisView* v;
+}
+-(IBAction)changeRingColor:(id)sender;
 
 @end
