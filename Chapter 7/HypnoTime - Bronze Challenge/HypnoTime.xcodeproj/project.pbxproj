@@ -24,6 +24,9 @@
 		4919226A16955160006A1E12 /* Hypno@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919226616955160006A1E12 /* Hypno@2x.png */; };
 		4919226B16955160006A1E12 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919226716955160006A1E12 /* Time.png */; };
 		4919226C16955160006A1E12 /* Time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919226816955160006A1E12 /* Time@2x.png */; };
+		4919227316955D65006A1E12 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919227216955D65006A1E12 /* MapViewController.m */; };
+		4919227616955D94006A1E12 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4919227516955D94006A1E12 /* MapViewController.xib */; };
+		4919227816955F4E006A1E12 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919227716955F4D006A1E12 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,10 @@
 		4919226616955160006A1E12 /* Hypno@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hypno@2x.png"; sourceTree = "<group>"; };
 		4919226716955160006A1E12 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
 		4919226816955160006A1E12 /* Time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time@2x.png"; sourceTree = "<group>"; };
+		4919227116955D65006A1E12 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		4919227216955D65006A1E12 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		4919227516955D94006A1E12 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		4919227716955F4D006A1E12 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4919227816955F4E006A1E12 /* MapKit.framework in Frameworks */,
 				4919223E16954453006A1E12 /* UIKit.framework in Frameworks */,
 				4919224016954453006A1E12 /* Foundation.framework in Frameworks */,
 				4919224216954453006A1E12 /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +78,7 @@
 		4919222E16954453006A1E12 = {
 			isa = PBXGroup;
 			children = (
+				4919227716955F4D006A1E12 /* MapKit.framework */,
 				4919224316954453006A1E12 /* HypnoTime */,
 				4919223C16954453006A1E12 /* Frameworks */,
 				4919223A16954453006A1E12 /* Products */,
@@ -106,6 +115,9 @@
 				4919226016954674006A1E12 /* TimeViewController.h */,
 				4919226116954674006A1E12 /* TimeViewController.m */,
 				49192263169546D4006A1E12 /* TimeViewController.xib */,
+				4919227116955D65006A1E12 /* MapViewController.h */,
+				4919227216955D65006A1E12 /* MapViewController.m */,
+				4919227516955D94006A1E12 /* MapViewController.xib */,
 				4919224416954453006A1E12 /* Supporting Files */,
 			);
 			path = HypnoTime;
@@ -190,6 +202,7 @@
 				4919226A16955160006A1E12 /* Hypno@2x.png in Resources */,
 				4919226B16955160006A1E12 /* Time.png in Resources */,
 				4919226C16955160006A1E12 /* Time@2x.png in Resources */,
+				4919227616955D94006A1E12 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +218,7 @@
 				4919225C169544B5006A1E12 /* HypnosisViewController.m in Sources */,
 				4919225F169544EE006A1E12 /* HypnosisView.m in Sources */,
 				4919226216954674006A1E12 /* TimeViewController.m in Sources */,
+				4919227316955D65006A1E12 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +327,7 @@
 				4919225916954453006A1E12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

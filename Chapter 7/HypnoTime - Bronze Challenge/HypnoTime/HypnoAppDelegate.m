@@ -9,6 +9,7 @@
 #import "HypnoAppDelegate.h"
 #import "HypnosisViewController.h"
 #import "TimeViewController.h"
+#import "MapViewController.h"
 
 @implementation HypnoAppDelegate
 
@@ -18,8 +19,9 @@
     // Override point for customization after application launch.
     HypnosisViewController* hvc = [[HypnosisViewController alloc] init];
     TimeViewController* tvc = [[TimeViewController alloc] init];
+    MapViewController* mvc = [[MapViewController alloc] init];
     UITabBarController* tabBarController = [[UITabBarController alloc] init];
-    NSArray* viewControllers = [NSArray arrayWithObjects:hvc,tvc,nil];
+    NSArray* viewControllers = [NSArray arrayWithObjects:hvc,tvc,mvc,nil];
     
     [tabBarController setViewControllers:viewControllers];
     
