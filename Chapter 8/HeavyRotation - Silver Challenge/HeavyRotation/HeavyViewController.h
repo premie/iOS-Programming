@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HeavyViewController : UIViewController
+@interface HeavyViewController : UIViewController{
+    IBOutlet UIButton* bottomLeftCorner;
+    IBOutlet UIButton* bottomRightCorner;
+    IBOutlet UIImageView* centerImage;
+    IBOutlet UISlider* topSlider;
+}
 
 @end

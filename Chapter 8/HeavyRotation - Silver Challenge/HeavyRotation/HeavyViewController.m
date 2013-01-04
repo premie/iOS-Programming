@@ -14,4 +14,12 @@
 
 @implementation HeavyViewController
 
+-(void)viewDidLoad{
+    // Programatically set our mask
+    [bottomLeftCorner setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin];
+    [bottomRightCorner setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin];
+    [centerImage setAutoresizingMask:UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth];
+    [topSlider setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin];
+}
+
 @end
